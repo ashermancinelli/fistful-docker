@@ -3,9 +3,9 @@
 #####################################################################
 FROM cm2network/steamcmd:root
 
-ENV STEAMAPPID 295230
-ENV STEAMAPP fof
-ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
+ENV STEAMAPPID=295230
+ENV STEAMAPP=fof
+ENV STEAMAPPDIR="${HOMEDIR}/${STEAMAPP}-dedicated"
 
 COPY entry.sh ${HOMEDIR}/entry.sh
 RUN set -x \

@@ -1,9 +1,10 @@
 mkdir -p "${STEAMAPPDIR}" || true 
 
-bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
-				+force_install_dir "${STEAMAPPDIR}" \
-				+app_update "${STEAMAPPID}" \
-				+quit
+bash "${STEAMCMDDIR}/steamcmd.sh" \
+  +force_install_dir "${STEAMAPPDIR}" \
+  +login anonymous \
+  +app_update "${STEAMAPPID}" \
+  +quit
 
 cd ${STEAMAPPDIR}
 
